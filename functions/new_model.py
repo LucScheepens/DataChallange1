@@ -11,7 +11,7 @@ import tensorflow as tf
 from keras.preprocessing.image import ImageDataGenerator
 from keras.wrappers.scikit_learn import KerasRegressor
 from sklearn.model_selection import GridSearchCV
-
+#
 from keras.layers import  BatchNormalization, Activation
 
 def compile_model_2(model):

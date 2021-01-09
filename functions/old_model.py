@@ -8,7 +8,7 @@ import time
 import keras
 import tensorflow as tf
 from keras.preprocessing.image import ImageDataGenerator
-# 
+3
 def model_fn(labels_dim):
     """Create a Keras Sequential model with layers."""
     model = keras.models.Sequential()

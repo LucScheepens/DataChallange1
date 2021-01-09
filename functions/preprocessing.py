@@ -3,7 +3,7 @@
 from scipy.ndimage import gaussian_filter
 import time
 import numpy as np
-
+#
 def apply_gaussian_blur(lst, sigma = 0.5):
   '''
   This is a function that applies gaussian blur to a list of images. To specify
