@@ -1,4 +1,5 @@
 from functions.old_model import read_test_data, read_train_data
+from functions.create_confusion_matrix import create_confusion_matrix
 import glob
 import matplotlib.pyplot as plt
 import numpy as np
@@ -110,6 +111,8 @@ def run_3(X_train = X_train,
               callbacks=callbacks,
               # verbose=2,
               validation_data=(X_test, y_test))
+
+    confusion_matrix = create_confusion_matrix(retinopathy_model, y_test, X_test)
 
     retinopathy_model.save(os.path.join(job_dir, RETINOPATHY_MODEL))
 
